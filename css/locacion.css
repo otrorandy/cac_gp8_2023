@@ -85,15 +85,6 @@ video{
     width: 100%;
 }
 
-#quienes-somos{
-
-}
-
-#quienes-somos .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
 @media (min-width: 720px){
     header .container{
         flex-direction: row;
