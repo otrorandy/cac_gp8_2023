@@ -31,15 +31,29 @@ button:hover{
     background-color: rgb(197, 173, 20);
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
+.btn-especial{
+    background-color: rgb(254, 222, 4);
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
 }
 
-.container
+.btn-especial:hover{
+    background-color: rgb(197, 173, 20);
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 header{
-    background-color: rgb(245, 245, 245);
+    background-color: white;
 }
 
 header .logo{
@@ -84,10 +98,6 @@ video{
     width: 100%;
 }
 
-#quienes-somos{
-
-}
-
 #quienes-somos .container{
     text-align: center;
     padding: 200px 12px;
@@ -125,11 +135,156 @@ video{
     }
 
     #quienes-somos .img-container{
-        background-image: url("img/fachada.jpg");
+        background-image: url("../img/fachada.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 400px;
     }
+
+    .btn-especial{
+        font-size: 2.2rem;
+    }
+
 }
 
+.formulario-contacto{
+    padding-top: 5rem;
+}
+
+@media(min-width: 720px){
+    .formulario-contacto{
+        display: flex;
+    }
+}
+
+
+.infocontacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infocontacto .formulario{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.infocontacto{
+    background-color: black;
+    padding: 2rem;
+}
+
+
+.infocontacto h3, .infocontacto p, .rrss i{
+    color: white;
+}
+
+.infocontacto h3{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infocontacto p{
+    font-size: 1.5rem;
+}
+
+.infocontacto i{
+    margin-right: 1rem;
+}
+
+.rrss{
+    font-size: 3rem;
+}
+
+.formulario{
+    padding: 5rem;
+}
+
+.input-formulario label{
+    display: block;
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.input-formulario input, .input-formulario textarea{
+    width: 100%;
+}
+
+.input-formulario input, .input-formulario textarea{
+    padding: 1rem 1.6rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input-formulario textarea{
+    height: 10rem;
+    resize: none;
+}
+
+
+@media(min-width:720px){
+    .contenedor-piepagina{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.pie-pagina{
+    background-color: rgb(99, 96, 96);
+
+}
+
+.info{
+    flex: 0 0 calc(25% - 1rem);
+    margin-bottom: 2rem;
+}
+
+.info h3, .info p{
+    color: white;
+    text-align: center;
+}
+
+.info h3{
+    font-size: 2rem;
+}
+
+.info p{
+    font-size: 1rem;
+}
+
+.redes-pie{
+    text-align: center;
+}
+
+
+.redes-pie i{
+    font-size: 2rem;
+}
+
+.info input[type="email"]{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.info input[type="submit"]{
+    padding: .5rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 0;
+}
+
+.footer{
+    text-align: center;
+    background-color: rgba(rgb(48, 46, 46), green, blue, alpha);
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+}
