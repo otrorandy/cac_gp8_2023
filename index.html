@@ -7,19 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espacios Balux</title>
     <link rel="shortcut icon" href="./img/cropped-favicon-32x32.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d33b22f8d6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <img src="./img/espacios-balux.png" class="logo"></img>
-            <nav>
-                <a href="#">INICIO</a>
-                <a href="#">QUIENES SOMOS</a>
-                <a href="#">NUESTROS SERVICIOS</a>
-                <a href="#">CONTACTO</a>
-            </nav>
+    <header class="header">
+        <div class="logo"><img src="./img/espacios-balux.png" class="logo"></img></div>        
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><img class="menu" src="./img/menu.svg" alt="menu"></label>
+            
+        <nav class="navigation">
+
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#quienes-somos">QUIENES SOMOS</a></li>
+                <li><a href="#">NUESTROS SERVICIOS</a>
+                    <ul>
+                        <li><a href="#">LOCACIÓN</a></li>
+                        <li><a href="#">COWORKING</a></li>
+                        <li><a href="#">RENTALS</a></li>    
+                    </ul>
+                </li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
         </div>
     </header>
 
@@ -47,19 +59,75 @@
         </div>
     </section>
 
-    <section id="contacto">
-        <div class="container">
-            <h2>CONTACTO</h2>
+    <section id="contacto"></section>
+    <div class="formulario-contacto container">
+        <div class="infocontacto">
+            <h3>CONTACTO</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Bolivia 1256</p>
+            <p><i class="fa-solid fa-envelope"></i> info@espaciosbalux.com.ar</p>
+            <p><i class="fa-brands fa-whatsapp"></i> +54911 21550037</p>
+            <div class="rrss">
+                <a href="https://www.facebook.com/espaciosbalux" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/espaciosbalux" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
-    </section>
+        
+        <form class="formulario" id="formulario" onsubmit="return validarFormulario()">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Juan" id="nombre" name="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="ejemplo@ejemplo.com" id="correo" name="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="+5491123456789" id="telefono" name="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Consulta</label>
+                <textarea></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn-especial" value="Enviar">
+            </div>
+        </form>
+    </div>
 
     <div class="flexible-container">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4527437865145!2d-58.47306468518953!3d-34.61799748045587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f17d294ce9%3A0x2be3fc7ebd50b104!2sBolivia+1150%2C+C1416ANB+CABA!5e0!3m2!1ses-419!2sar!4v1552346704427"
             width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="social">
         </div>
 
+        <div class="pie-pagina">
+            <div class="contenedor-piepagina contenedor">
+                <div class="info">
+                    <h3>Dirección</h3>
+                    <p>Bolivia 1256</p>
+                </div>
+                <div class="info">
+                    <h3>Días especiales</h3>
+                    <p>Sábados 10 - 13 hs.</p>
+                    <p>11 21550037</p>
+                </div>
+                <div class="info">
+                    <h3>Horarios</h3>
+                    <p>Lunes - Viernes 10 - 18 hs.</p>
+                    <div class="redes-sociales redes-pie">
+                        <a href="https://www.facebook.com/espaciosbalux" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/espaciosbalux" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Noticias</h3>
+                    <p>suscribete para recibir más noticias</p>
+                    <input type="email" placeholder="Tu correo">
+                    <input type="submit" class="btn-especial" value="Suscribirse">
+                </div>
+            </div>
+        </div>
 
 
         <footer>
@@ -67,6 +135,8 @@
                 <p>&copy; EspaciosBalux - Todos los derechos reservados.</p>
             </div>
         </footer>
+
+<script src="validacion.js"></script>
 
 </body>
 
