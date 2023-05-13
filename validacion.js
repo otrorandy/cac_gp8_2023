@@ -18,6 +18,14 @@ for (var i = 0; i < nombre.length; i++) {
     }
   }
 
+var regexEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,4})+$/;
+
+if (!regexEmail.test(correo)) {
+  alert("El campo correo solo puede contener direcciones validas ejemplo@ejemlo.com");
+  return false;
+}
+
+
   if (telefono.length !== 8) {
     alert("El campo 'telefono' debe contener exactamente 8 dígitos numéricos.");
     return false;
