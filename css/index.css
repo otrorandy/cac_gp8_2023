@@ -242,19 +242,22 @@ video{
 
 
 .infocontacto{
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    padding: 2rem;
+}
+
+.infocontacto p{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .infocontacto .formulario{
     flex: 0 0 calc(50% - 1rem);
-}
-
-.infocontacto{
-    background-color: black;
-    padding: 2rem;
 }
 
 
@@ -271,16 +274,17 @@ video{
     font-size: 1.5rem;
 }
 
-.infocontacto i{
-    margin-right: 1rem;
-}
-
 .rrss{
     font-size: 3rem;
 }
 
+.rrss a{
+    margin-right: 1rem;
+}
+
 .formulario{
     padding: 5rem;
+    width: 100%;
 }
 
 .input-formulario label{
@@ -317,7 +321,10 @@ video{
 
 .pie-pagina{
     background-color: rgb(99, 96, 96);
-
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .info{
@@ -367,6 +374,6 @@ footer{
     text-align: center;
     background-color: rgb(48, 46, 46);
     color: white;
-    padding: 2rem;
+    padding-bottom: 2rem;
     font-size: 2rem;
 }
