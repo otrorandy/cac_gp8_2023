@@ -150,6 +150,12 @@ button:hover{
         padding: 8px 30px 8px 10%;
         }
 
+    .header .navigation ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }    
+
     .header .navigation ul li ul li {
         background-color: rgb(254, 222, 4);
     }    
@@ -180,7 +186,7 @@ video{
 }
 
 @media (min-width: 720px){
-    header .container{
+    /*header .container{
         flex-direction: row;
         justify-content: space-between;
     }
@@ -189,7 +195,7 @@ video{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
-    }
+    }*/
 
     #quienes-somos .container{
         display: flex;
