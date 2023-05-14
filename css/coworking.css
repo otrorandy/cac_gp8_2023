@@ -21,7 +21,7 @@ h1{
     color: white;
 }
 
-.info-de-coworking{
+.texto-general{
     text-align: center;
     display: flex;
     justify-content: center;
@@ -29,13 +29,29 @@ h1{
     margin: 2rem;
 }
 
-.info-de-coworking p{
+.texto-general p{
     padding-left: 7rem;
     padding-right: 7rem;
 }
 
+.planes{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.planes li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
 @media(max-width:1024px){
-    .info-de-coworking p{
+    .texto-general p{
         padding-left: 5rem;
         padding-right: 5rem;
     }
@@ -54,7 +70,7 @@ h1{
 }
 
 @media(max-width:720px){
-    .info-de-coworking p{
+    .texto-general p{
         padding-left: 4rem;
         padding-right: 4rem;
     }
@@ -73,7 +89,7 @@ h1{
 }
 
 @media(max-width:425px){
-    .info-de-coworking p{
+    .texto-general p{
         padding-left: 2rem;
         padding-right: 2rem;
     }
