@@ -4,11 +4,9 @@
     object-fit: cover;
 }
 
-.absolute{
+.titulo{
     width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
+    height: 600px;
     position: absolute;
     text-align: center;
     display: flex;
@@ -21,4 +19,74 @@ h1{
     font-weight: bold;
     z-index: 100;
     color: white;
+}
+
+.info-de-coworking{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.info-de-coworking p{
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+@media(max-width:1024px){
+    .info-de-coworking p{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    h1{
+        font-size: 5em;
+    }
+
+    #hero img{
+        height: 500px;
+    }
+
+    .titulo{
+        height: 500px;
+    }
+}
+
+@media(max-width:720px){
+    .info-de-coworking p{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+    h1{
+        font-size: 4em;
+    }
+
+    #hero img{
+        height: 400px;
+    }
+
+    .titulo{
+        height: 400px;
+    }
+}
+
+@media(max-width:425px){
+    .info-de-coworking p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    h1{
+        font-size: 3em;
+    }
+
+    #hero img{
+        height: 300px;
+    }
+
+    .titulo{
+        height: 300px;
+    }
 }
