@@ -34,21 +34,42 @@ h1{
     padding-right: 7rem;
 }
 
-.planes{
+.planes {
     width: 940px;
     margin: 0 auto;
     padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-.planes li{
-    display: inline-block;
+.planes li {
     width: 30%;
     text-align: center;
     vertical-align: top;
-    margin: 0 1%;
-    padding: 30px 20px;
+    margin: 0 1.5%;
     box-sizing: border-box;
+    border: 2px solid black;
+    flex-grow: 1;
+    height: 525px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.planes li:hover{
+    border: 2px solid rgb(197, 173, 20);
+}
+
+.planes li h3,
+.planes li p,
+.planes li button {
+    margin: 0;
+    padding: 10px;
+}
+
+
 
 @media(max-width:1024px){
     .texto-general p{
