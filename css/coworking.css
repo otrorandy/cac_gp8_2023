@@ -50,6 +50,7 @@ h1{
     margin: 0 1.5%;
     box-sizing: border-box;
     border: 2px solid black;
+    border-radius: 10px;
     flex-grow: 1;
     height: 525px;
     padding: 30px 20px;
