@@ -12,36 +12,32 @@
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/rentals.js"></script>
+    
 
 
-    <iframe id="header" src="../header.html" frameborder="0" scrolling="no" width="100%" height="250"></iframe>
+    <iframe id="header" src="../header.html" frameborder="0" scrolling="no" width="100%" height="100"></iframe>
 
     <div class="contenedor">
-        <aside >
-            <h3>CATALOGO</h3>
-            <ul class="catalogo-menu">
+        <div class="catalogo-menu">
+            <ul class="menu">
                 <li>
-                    <div class="menulink" id="sillones"><span aria-hidden="true">Sillones</span> 
-                    </div>
+                    <button class="menulink" id="todos">Todos</button>
                 </li>
                 <li>
-                  <div class="menulink" id="mesas"><span aria-hidden="true">Mesas</span> 
-                  </div>
+                    <button class="menulink" id="sillones">Sillones</button>
                 </li>
                 <li>
-                  <div class="menulink" id="escritorios"><span aria-hidden="true">Escritorios</span> 
-                  </div>
+                    <button class="menulink" id="mesas">Mesas</button>
                 </li>
                 <li>
-                    <div class="menulink" id="tecnologia"><span aria-hidden="true">Tecnologia</span> 
-                    </div>
+                    <button class="menulink" id="escritorios">Escritorios</button>
+                </li>
+                <li>
+                    <button class="menulink" id="tecnologia">Tecnologia</button>
                   </li>
               </ul>
-              
+        </div>
 
-        </aside>
         <main >
             <!--     sillones   -->
 
@@ -430,10 +426,12 @@
         <br>       
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/rentals.js"></script>
 
     <iframe id="footer" src="../footer.html" frameborder="0" scrolling="no" width="100%" height="200"></iframe>
 
-
+    
 </body>
 
 </html>

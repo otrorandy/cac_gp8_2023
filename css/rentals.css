@@ -23,6 +23,7 @@
 
 
 
+
 .contenedor{
     width: 90%;
     max-width: 1920px;
@@ -30,30 +31,18 @@
     margin-left: auto;
     margin-right: auto;
 
-
 } 
 
 
-aside{
-    background-color: rgb(214, 200, 7);
-    padding: 10px;
-    position: fixed;
-    top: 100px;
-    left: 70px;
-    width: 300px;
-    height: calc(80% - 100px);
 
-
-
-}
 main {
     display: grid;
     padding-top: 40px;
     top: 200px;
     margin-top: 140px;
-    margin-left: 350px;
-    width: 75%;
-    grid-template-columns: repeat(3, 1fr);
+    /* margin-left: 350px; */
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     /* background: blueviolet; */
 
@@ -117,16 +106,69 @@ main {
   .catalogo-menu {
 
     width: 100%;
-    max-width: 350px;
+    display: grid;
     margin: 90px auto 20px;
-    background:rgb(214, 200, 7);
-    border-radius: 4px;
-  }
+    background:rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center; 
+    text-align: center;
 
+
+
+  }
+  .catalogo-menu ul {
+    
+    width: 30%;
+    list-style: none;
+    padding: 0;
+    margin: 20;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+}
+
+
+.menu li {
+  padding: 0 10px;
+  float: left;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.menulink {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+.catalogo-menu li:last-child {
+  margin-right: 0;
+}
+
+
+
+button{
+  border-radius: 30px;
+  margin-left: 20px;
+  border: none;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  background: rgb(187, 186, 186);
+
+
+}
+.catalogo-menu li button:hover {
+  background-color: #666;
+}
 
   .active-tab {
     color: beige;
-    background: rgb(138, 118, 7);
+    background: rgb(214, 200, 7);
     
   }
   .listas {
@@ -138,7 +180,7 @@ main {
     color: aliceblue;
   }
 
-  .menulink {
+  /* .menulink {
     cursor:pointer;
     display: block;
     padding: 15px 15px 15px 45px;
@@ -146,8 +188,29 @@ main {
     border-bottom: 1px solid #555454;
     position: relative;
 
+  } */
+
+
+/*  notebook */
+@media screen and (max-width: 1400px) {
+  
+  aside {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
+  main {
+    width: 100%;
+    margin-left: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .catalogo-menu ul {
+
+    margin-left: 22%;
+    }
+}
 
 
 /*  tablet */
@@ -165,6 +228,11 @@ main {
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr);
   }
+  .catalogo-menu ul {
+
+    margin-left: 0px;
+    margin-left: 3%;
+    }
 }
 
 /*  móvil */
@@ -180,7 +248,25 @@ main {
 
   main {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5px;
     grid-template-columns: repeat(1, 1fr);
   }
+  button{
+    margin-left: 0px;
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+  }
+  .catalogo-menu ul {
+
+    width: 5%;
+
+    margin-left: 10%;
+    }
+    .menu li {
+      padding: 0 2px;
+      float: left;
+      flex-grow: 1;
+      margin-right: 5px;
+    }
 }
