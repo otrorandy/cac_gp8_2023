@@ -80,10 +80,30 @@ h1{
 }
 
 .te-ofrecemos li{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.precios{
+    padding: 50px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.precios li{
     width: 16%;
     display: inline-block;
     text-align: center;
     box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 @media(max-width:1024px){
@@ -124,6 +144,10 @@ h1{
     }
 
     .te-ofrecemos li{
+        width: 30%;
+    }
+
+    .precios li{
         width: 30%;
     }
 }
