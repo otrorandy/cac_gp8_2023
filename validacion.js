@@ -26,18 +26,15 @@ if (!regexEmail.test(correo)) {
 }
 
 
-  if (telefono.length !== 8) {
-    alert("El campo 'telefono' debe contener exactamente 8 dígitos numéricos.");
-    return false;
-  }
-  for (var j = 0; j < telefono.length; j++) {
-    var digit = telefono.charAt(j);
-    if (digit < "0" || digit > "9") {
-      alert("El campo 'telefono' solo puede contener dígitos numéricos.");
-      return false;
-    }
-  }
+var regexTel = /^\(?(\d{5})\)?[-]?(\d{4})[-]?(\d{4})$/;
 
+
+if (!regexTel.test(telefono)) {
+  alert("El campo telefono solo puede contener numeros validos 54911-xxxx-xxxx");
+  return false;
+}
+
+ 
   alert("Formulario enviado correctamente.");
   return true;
 }
