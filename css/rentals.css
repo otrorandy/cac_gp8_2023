@@ -204,7 +204,7 @@ button{
   main {
     width: 100%;
     margin-left: 0;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .catalogo-menu ul {
 
