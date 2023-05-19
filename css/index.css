@@ -176,7 +176,7 @@ button:hover{
 .slider {
     width: 100%;
     margin: auto;
-    height: 900px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -210,6 +210,12 @@ button:hover{
 
     75% {margin-left: -300%;}
     /* 100% {margin-left: -300%;} */
+}
+
+@media(min-width: 720px){
+    .slider{
+        height: 700px;
+    }
 }
 
 video{
