@@ -1,6 +1,0 @@
-posibles cambios o agregados esteticos a index
-
-nav ul li a:not(:only-child):after {
-    padding-left: 5px;
-    content: ' ▾';
-  }
