@@ -235,7 +235,7 @@ video{
     margin-bottom: 2rem;
 }
 
-.#quienes-somos .global {
+#quienes-somos .global {
     margin-top: 6.9rem;
 }
 
@@ -409,6 +409,7 @@ video{
     border-radius: 5px;
     outline: none;
     width: 80%;
+}
 
 .info input[type="submit"]{
     padding: .25rem 1rem;
