@@ -9,13 +9,17 @@
     <link rel="shortcut icon" href="./img/cropped-favicon-32x32.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d33b22f8d6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo"><img src="./img/espacios-balux.png" class="logo"></img></div>        
+        <div class="logo"><a href="#"><img src="./img/BaluxW.png" class="logo"></img></a> </div>        
             <input type="checkbox" id="toggle">
-            <label for="toggle"><img class="menu" src="./img/menu.svg" alt="menu"></label>
+            <label for="toggle"><img class="menu" src="./img/menuW.svg" alt="menu"></label>
             
         <nav class="navigation">
 
@@ -120,30 +124,61 @@
             width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
-    <footer>
-        <div class="pie-pagina">
-            <div class="contenedor-piepagina contenedor">
-                <div class="info">
-                    <p>&copy; EspaciosBalux - Todos los derechos reservados.</p>
+        <footer>
+            <div class="pie-pagina">
+                <div class="contenedor-piepagina contenedor">
+                    <div class="infoFooter">
+                        <div ><img src="./img/BaluxW.png" class="logoFooter"></img></div>  
+                        <div class="infoFooter contenedorRedes">
+                            <div class="redes">
+                                <a href="https://www.facebook.com/espaciosbalux" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/espaciosbalux" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="infoFooter">
+                        <h4>ENLACES UTILES</h4>
+                        <hr class="linea-color">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#quienes-somos">Quienes somos</a></li>
+                            <li><a href="#">Nuestros servicios</a>
+                                <ul>
+                                    <li><a href="./html/locacion.html">Locación</a></li>
+                                    <li><a href="./html/coworking.html">Coworking</a></li>
+                                    <li><a href="./html/rentals.html">Rentals</a></li>    
+                                </ul>
+                            </li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="infoFooter">
+                        <h4>CONTACTANOS</h4>
+                        <hr class="linea-color">
+                        <p><i class="fa-solid fa-location-dot"></i> Bolivia 1256</p>
+                        <p><i class="fa-solid fa-envelope"></i> info@espaciosbalux.com.ar</p>
+                        <p><i class="fa-brands fa-whatsapp"></i> +54911 21550037</p>
+                        <p>Lunes - Viernes 10 - 18 hs.</p>
+                        <p>Sábados 10 - 13 hs.</p>
+                        
+                    </div>
+                    <div class="infoFooter">
+                        <h4>SUSCRIBETE</h4>
+                        <hr class="linea-color">
+                        <p>Ingresa tu e-mail para suscribirte a las últimas novedades</p>
+    
+                        <input type="email" class="correo" placeholder="Tu correo">
+                        <input type="submit" class="btn-footer" value="Suscribirse">
+    
+                        
+                    </div>
                 </div>
-                <div class="info">
-                    <h3>Días especiales</h3>
-                    <p>Sábados 10 - 13 hs.</p>
-                    <p>11 21550037</p>
-                </div>
-                <div class="info">
-                    <h3>Horarios</h3>
-                    <p>Lunes - Viernes 10 - 18 hs.</p>
-                </div>
-                <div class="info">
-                    <h3>Noticias</h3>
-                    <p>suscribete para recibir más noticias</p>
-                    <input type="email" placeholder="Tu correo">
-                    <input type="submit" class="btn-especial" value="Suscribirse">
+                <div>
+                    <p class="copy">&copy; EspaciosBalux - Todos los derechos reservados.</p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 <script src="validacion.js"></script>
 
