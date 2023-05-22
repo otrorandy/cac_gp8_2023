@@ -306,13 +306,14 @@ section {
     animation-timing-function: linear;
 }
 
-.slider li {
+.slider ul li {
     width: 100%;
     list-style: none;
 }
 
-.slider li img {
+.slider ul li img {
     width: 100%;
+    object-fit: cover;
 }
 
 @keyframes slider{
