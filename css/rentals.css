@@ -4,20 +4,217 @@
 
 
 
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 
 
+/*HEADER*/
 
-#header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
-#footer{
-
-  z-index: 999;
+.navigation{
+  font-family: 'Kanit', sans-serif;
 }
+.navigation ul {
+  list-style: none;
+
+}
+
+.header .navigation ul li{
+  float: left;
+  position: relative;
+}
+
+.header .navigation ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  transition: all .2s ease;
+}
+
+.header .navigation ul li a:hover{
+  /* background-color: rgb(254, 222, 4); */
+  color: rgb(254, 222, 4);
+}
+
+.header .navigation ul li ul {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  display: none;
+}
+
+.header .navigation ul li ul li a{
+  font-size: 15px;    
+}
+
+.header .navigation ul li ul li {
+  width: 100%;
+}
+
+.header .navigation ul li:hover > ul {
+  display: initial;
+}
+
+#toggle,
+.header label{
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  width: 45px;
+  height: 35px;
+}
+
+.logo{
+  width: 200px;
+  padding: 5px;
+}
+
+
+/*imagen Rentals*/
+#hero img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.titulo{
+  width: 100%;
+  height: 600px;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 6em;
+  font-weight: bold;
+  z-index: 100;
+  color: white;
+}
+
+
+
+
+
+/*Footer*/
+
+.pie-pagina{
+  font-family: 'Kanit', sans-serif;
+  padding: 30px;
+  background-color: rgb(17, 17, 17); 
+  text-align: left;
+
+}
+.infoFooter p{
+  text-align: left;
+}
+.infoFooter ul li {
+  list-style: none;
+  color: white;
+}
+
+.infoFooter ul li a {
+  text-decoration: none;
+  color: white;
+  
+}
+.infoFooter p {
+font-size: 16px;
+}
+.infoFooter input{
+  height: 35px;
+
+}
+
+.logoFooter{
+
+  width: 200px;
+  padding-left: 5px;
+
+}
+.contenedor-piepagina{
+  color: white;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contenedorRedes{
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 130px;
+  
+  
+}
+.redes{
+
+  font-size: 2rem;
+  
+}
+.redes a{
+  color:rgb(254, 222, 4);
+}
+.footer{
+  text-align: left;
+  background-color: rgba(17, 17, 17);
+  color: black;
+  padding: 2rem;
+  font-size: 2rem;
+} 
+
+.linea-color {
+  border: none;
+background-image: linear-gradient(to right, rgb(254, 222, 4) 50%, rgb(110, 110, 110) 50%); 
+height: 2px; 
+width: 200px; 
+
+}
+.copy{
+  padding-top: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style:normal;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.btn-footer{
+  background-color: rgb(254, 222, 4);
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+
+}
+
+
+
+
+
+
 
 
 
@@ -27,7 +224,6 @@
 .contenedor{
     width: 90%;
     max-width: 1920px;
-
     margin-left: auto;
     margin-right: auto;
 
@@ -37,9 +233,9 @@
 
 main {
     display: grid;
-    padding-top: 40px;
-    top: 200px;
-    margin-top: 140px;
+    /* padding-top: 10px; */
+    /* top: 200px; */
+    margin-top: 40px;
     /* margin-left: 350px; */
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
@@ -48,7 +244,10 @@ main {
 
 }
 .detalle{
-    font-size: 12px;
+  padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
 }
 
   .card-sillones{
@@ -83,13 +282,12 @@ main {
     width: 100%;
     height: 300px;
     object-fit: cover;
-
   }
+
   body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-
   }
 
 
@@ -103,23 +301,27 @@ main {
 
 
 
-  .catalogo-menu {
+  #catalogo-menu {
 
     width: 100%;
     display: grid;
-    margin: 90px auto 20px;
-    background:rgb(0, 0, 0);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    /* margin: 90px auto 20px; */
+    background:rgb(124, 124, 124);
+    /* position: fixed;
+    top: 300px; */
+
     align-items: center; 
     text-align: center;
-
-
-
   }
-  .catalogo-menu ul {
+
+  #catalogo-menu.fixed {
+    position: fixed;
+    top: 100px; 
+  }
+
+
+
+  #catalogo-menu ul {
     
     width: 30%;
     list-style: none;
@@ -128,7 +330,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-left: 30%;
-}
+  }
 
 
 .menu li {
@@ -138,19 +340,16 @@ main {
   margin-right: 10px;
 }
 
-.menulink {
-  padding: 5px 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-}
-.catalogo-menu li:last-child {
+#catalogo-menu li:last-child {
   margin-right: 0;
 }
 
 
-
-button{
+/*boton*/
+.menulink{
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
   border-radius: 30px;
   margin-left: 20px;
   border: none;
@@ -162,7 +361,7 @@ button{
 
 
 }
-.catalogo-menu li button:hover {
+#catalogo-menu li button:hover {
   background-color: #666;
 }
 
@@ -180,16 +379,6 @@ button{
     color: aliceblue;
   }
 
-  /* .menulink {
-    cursor:pointer;
-    display: block;
-    padding: 15px 15px 15px 45px;
-    font-size: 18px;
-    border-bottom: 1px solid #555454;
-    position: relative;
-
-  } */
-
 
 /*  notebook */
 @media screen and (max-width: 1400px) {
@@ -206,12 +395,11 @@ button{
     margin-left: 0;
     grid-template-columns: repeat(4, 1fr);
   }
-  .catalogo-menu ul {
+  #catalogo-menu ul {
 
     margin-left: 22%;
     }
 }
-
 
 /*  tablet */
 @media screen and (max-width: 1024px) {
@@ -228,7 +416,7 @@ button{
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr);
   }
-  .catalogo-menu ul {
+  #catalogo-menu ul {
 
     margin-left: 0px;
     margin-left: 3%;
@@ -251,13 +439,13 @@ button{
     margin-top: 5px;
     grid-template-columns: repeat(1, 1fr);
   }
-  button{
+  .menulink{
     margin-left: 0px;
     height: 30px;
     width: 70px;
     font-size: 12px;
   }
-  .catalogo-menu ul {
+  #catalogo-menu ul {
 
     width: 5%;
 
