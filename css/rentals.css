@@ -25,18 +25,19 @@ a {
 .titulo{
   width: 100%;
   height: 600px;
-  font-family: 'Times New Roman', Times, serif;
   position: absolute;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4em;
+  font-size: 2em;
+}
+
+h1{
   font-weight: bold;
   z-index: 100;
   color: white;
 }
-
 
 .contenedor{
     width: 90%;
