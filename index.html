@@ -9,10 +9,6 @@
     <link rel="shortcut icon" href="./img/cropped-favicon-32x32.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d33b22f8d6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
@@ -28,7 +24,7 @@
 
             <ul>
                 <li><a href="#">INICIO</a></li>
-                <li><a href="#quienes-somos">QUIENES SOMOS</a></li>
+                <li><a href="#qs">QUIENES SOMOS</a></li>
                 <li><a href="#">NUESTROS SERVICIOS</a>
                     <ul>
                         <li><a href="/html/locacion.html">LOCACIÓN</a></li>
@@ -42,7 +38,7 @@
         </div>
     </header>
 
-    <section id="hero">
+    <!-- <section id="hero">
         <div class="slider">
             <ul>
                 <li><img src="./img/Balux-1.jpg" alt=""></li>
@@ -52,36 +48,32 @@
                 <li><img src="./img/locacion/balux_espacios_15.jpg" alt=""></li>
             </ul>
         </div>
+    </section> -->
+
+    <section id="hero">
+        <img src="/img/portada.jpg" id="" alt="">
     </section>
 
-
     <section id="quienes-somos">
-        <div class="quienes_container">
-            <div class="res-des pad-rig">
-                <div class="global">
-                    <h2 class="h2-sub">
-                        QUIENES SOMOS
-                    </h2>
-                </div>
-                <p>
-                    Espacios Balux es una antigua fabrica textil en el barrio de Paternal, que producía medias de mujer,
-                    pijamas y sweaters. Cuenta con espacios que datan de 1933 y otros de 1965 respetando los estilos
-                    arquitectónicos de cada época. Tiene salida a 3 calles , parking propio y varias comodidades mas
-                    para cualquier tipo de producción al ser un predio de 5000 mts2. Con el correr de los años la fuimos
-                    transformando en locación para diversas producciones audiovisuales. Hoy en día agregamos el área de
-                    depósitos , coworking y eventos.
-                </p>
-            </div>
-
-            <div>
-                <div>
-                    <video onloadedmetadata="this.muted=true" autoplay loop>
-                        <source src="./img/video25.mp4">
-                    </video>
-                </div>
-
-            </div>
+        <div class="quienes-cont">
+            <h2 id="qs">
+                Quienes Somos
+            </h2>
+            <p>
+                Espacios Balux es una antigua fabrica textil en el barrio de Paternal, que producía medias de mujer,
+                pijamas y sweaters. Cuenta con espacios que datan de 1933 y otros de 1965 respetando los estilos
+                arquitectónicos de cada época. Tiene salida a 3 calles , parking propio y varias comodidades mas
+                para cualquier tipo de producción al ser un predio de 5000 mts2. Con el correr de los años la fuimos
+                transformando en locación para diversas producciones audiovisuales. Hoy en día agregamos el área de
+                depósitos , coworking y eventos.
+            </p>
         </div>
+        <div class="vid">
+            <video onloadedmetadata="this.muted=true" autoplay loop>
+                <source src="./img/video25.mp4">
+            </video>
+        </div>
+
     </section>
     <section id="contacto">
         <form class="formulario" id="formulario" onsubmit="return validarFormulario()">
@@ -164,7 +156,6 @@
                     <input type="email" class="correo" placeholder="Tu correo">
                     <input type="submit" class="btn-footer" value="Suscribirse">
 
-
                 </div>
             </div>
             <div>
@@ -174,7 +165,6 @@
     </footer>
 
     <script src="validacion.js"></script>
-
 </body>
 
 </html>
