@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -9,13 +9,13 @@ body {
 
 
 /*imagen Rentals*/
-#hero img{
+#hero img {
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
 
-.titulo{
+.titulo {
   width: 100%;
   height: 600px;
   position: absolute;
@@ -26,83 +26,92 @@ body {
   font-size: 2em;
 }
 
-h1{
+h1 {
   font-weight: bold;
   z-index: 100;
   color: white;
 }
 
-.contenedor{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+.contenedor {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 
-} 
+}
 
 main {
-    display: grid;
-    margin-top: 3em;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5em;
+  display: grid;
+  margin-top: 3em;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
 }
 
-.detalle{
+.detalle {
   padding: 1em;
-    font-size: 0.9em;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
 }
 
-  .card-sillones{
+.card-sillones {
 
-    border: 1px solid rgb(243, 243, 243);
-    padding: 0.5em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  .card-escritorios{
-
-    border: 1px solid rgb(243, 243, 243);
-    padding: 0.5em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .card-mesas{
-
-    border: 1px solid rgb(243, 243, 243);
-    padding: 0.5em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  .card-tecnologia{
-
-    border: 1px solid rgb(243, 243, 243);
-    padding: 0.5em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-
-
-  .card-sillones img , .card-escritorios img, .card-mesas img, .card-tecnologia img{
-    width: 100%;
-    height: 20em;
-    object-fit: cover;
-  }
-
-  .card-sillones:hover, .card-escritorios:hover, .card-mesas:hover, .card-tecnologia:hover  {
-    transition: all .3s ease-in;
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+  border: 1px solid rgb(243, 243, 243);
+  padding: 0.5em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-  #catalogo-menu {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background:rgb(214, 200, 7);
-    /* z-index: 1000; */
-    display: flex;
-    justify-content: space-between;
-  }
+.card-escritorios {
 
-.espacio{
+  border: 1px solid rgb(243, 243, 243);
+  padding: 0.5em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-mesas {
+
+  border: 1px solid rgb(243, 243, 243);
+  padding: 0.5em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-tecnologia {
+
+  border: 1px solid rgb(243, 243, 243);
+  padding: 0.5em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-sillones img,
+.card-escritorios img,
+.card-mesas img,
+.card-tecnologia img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+
+.card-sillones:hover,
+.card-escritorios:hover,
+.card-mesas:hover,
+.card-tecnologia:hover {
+  transition: all .3s ease-in;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#catalogo-menu {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgb(214, 200, 7);
+  /* z-index: 1000; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.espacio {
   width: 10em;
   border: none;
   background: rgb(214, 200, 7);
@@ -111,17 +120,17 @@ main {
 
 
 
-  /****para posicionar los botones en la parte superior*****/
-  #catalogo-menu.fixed {
-    position: fixed;
-    top: 6em; 
-  }
+/****para posicionar los botones en la parte superior*****/
+#catalogo-menu.fixed {
+  position: fixed;
+  top: 6em;
+}
 
 
 
 
 /*boton*/
-.menulink{
+.menulink {
   color: #000000;
   margin-left: 1.3em;
   height: 2.5em;
@@ -143,48 +152,50 @@ main {
   display: none;
 }
 
-#catalogo-menu  .menulink:hover {
+#catalogo-menu .menulink:hover {
   background-color: #666;
 }
 
-  .active-tab {
-    color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-    
-  }
-  .listas {
-    background: rgb(214, 200, 7);
-  }
+.active-tab {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
 
-  .texto{
-    color: aliceblue;
-  }
+}
+
+.listas {
+  background: rgb(214, 200, 7);
+}
+
+.texto {
+  color: aliceblue;
+}
 
 
 
 /*  tablet */
 @media screen and (max-width: 1024px) {
-  
+
   main {
     width: 100%;
     margin-left: 0;
     grid-template-columns: repeat(2, 1fr);
   }
+
   #catalogo-menu {
     position: relative;
     overflow: hidden;
-    }
-  
-    .menulink {
+  }
+
+  .menulink {
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
   .menulink:hover {
     background-color: #ddd;
   }
-  
+
   .botones-direccion {
     width: 40px;
     height: 40px;
@@ -195,29 +206,29 @@ main {
     font-size: 18px;
     position: fixed;
     display: block;
-    opacity: 0.3; 
-  
+    opacity: 0.3;
+
   }
-  
+
   .izquierdo {
     left: 10px;
   }
-  
+
   .derecho {
     right: 10px;
   }
-  
+
   .izquierdo:hover,
   .derecho:hover {
     background-color: #050505;
     color: #ddd;
     opacity: 1;
   }
-  
-    #catalogo-menu.fixed {
-      position: fixed;
-      top: 8.9em; 
-    }
+
+  #catalogo-menu.fixed {
+    position: fixed;
+    top: 8.9em;
+  }
 
 }
 
@@ -231,68 +242,67 @@ main {
   }
 
   #catalogo-menu {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
   }
 
   .menulink {
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-.menulink:hover {
-  background-color: #ddd;
-}
+  .menulink:hover {
+    background-color: #ddd;
+  }
 
-.botones-direccion {
-  width: 40px;
-  height: 40px;
-  background-color: #636363;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 18px;
-  position: fixed;
-  display: block;
-  opacity: 0.3; 
+  .botones-direccion {
+    width: 40px;
+    height: 40px;
+    background-color: #636363;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    position: fixed;
+    display: block;
+    opacity: 0.3;
 
-}
+  }
 
-.izquierdo {
-  left: 10px;
-}
+  .izquierdo {
+    left: 10px;
+  }
 
-.derecho {
-  right: 10px;
-}
+  .derecho {
+    right: 10px;
+  }
 
-.izquierdo:hover,
-.derecho:hover {
-  background-color: #050505;
-  color: #ddd;
-  opacity: 1;
-}
+  .izquierdo:hover,
+  .derecho:hover {
+    background-color: #050505;
+    color: #ddd;
+    opacity: 1;
+  }
 
   #catalogo-menu.fixed {
     position: fixed;
-    top: 8.9em; 
+    top: 8.9em;
   }
 
-  @media(max-width:425px){
- 
-  
-    #hero h1{
-        font-size: 1em;
-        /* font-family: 'Times New Roman', Times, serif; */
-    }  
-  
-    #hero img{
-        height: 300px;
-    }
-  
-    .titulo{
-        height: 300px;
-    }
-}
+  @media(max-width:425px) {
 
+    #hero h1 {
+      font-size: 1em;
+      /* font-family: 'Times New Roman', Times, serif; */
+    }
+
+    #hero img {
+      height: 300px;
+    }
+
+    .titulo {
+      height: 300px;
+    }
+  }
+}
