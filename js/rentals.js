@@ -86,3 +86,27 @@ window.addEventListener('scroll', function() {
     menu.classList.remove('fixed');
   }
 });
+
+
+
+
+//Efecto carrusel a los botones
+const botones = document.querySelector('#catalogo-menu');
+const btnIzq = document.querySelector('.izquierdo');
+const btnDer = document.querySelector('.derecho');
+
+btnIzq.addEventListener('click', () => {
+  botones.scrollBy({
+    left: -botones.offsetWidth,
+    behavior: 'smooth'
+  });
+});
+
+btnDer.addEventListener('click', () => {
+  botones.scrollBy({
+    left: botones.offsetWidth,
+    behavior: 'smooth'
+  });
+});
+
+
