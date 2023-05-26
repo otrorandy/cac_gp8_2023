@@ -69,13 +69,13 @@ section {
 }
 
 video {
-    padding-left: 15%;
-    padding-right: 15%;
     padding-top: 5%;
 }
 
 .vid {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #hero img{
@@ -552,7 +552,7 @@ video {
     video {
         padding-top: 5rem;
         width: 100%;
-        align-items: center;
+        /* align-items: center; */
     }
 
     #hero img{

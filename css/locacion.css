@@ -77,6 +77,21 @@ figure:hover {
         .grid-galeria .box-img:nth-child(1) {
             grid-column-start: span 1;
         }
+
+        #hero h1{
+            font-size: 3em;
+        } 
+    
+        #hero img{
+            height: 400px;
+        }
+    
+        .titulo{
+            height: 400px;
+        }
+
+
+
     }
 
     @media screen and (max-width:500px) {
@@ -87,5 +102,19 @@ figure:hover {
 
         .grid-galeria .box-img img {
             height: 200px;
+        }
+
+
+        #hero h1{
+            font-size: 1em;
+            /* font-family: 'Times New Roman', Times, serif; */
+        }  
+    
+        #hero img{
+            height: 300px;
+        }
+       
+        .titulo{
+            height: 300px;
         }
     }
