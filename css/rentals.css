@@ -230,6 +230,36 @@ main {
       display: initial;
   }
 
+  #hero h1{
+    font-size: 3em;
+    /* font-family: 'Times New Roman', Times, serif; */
+  }  
+
+  #hero img{
+    height: 400px;
+  }
+
+  .titulo{
+    height: 400px;
+  }
 
 }
 
+@media(max-width:425px){
+ 
+  
+  #hero h1{
+      font-size: 1em;
+      /* font-family: 'Times New Roman', Times, serif; */
+  }  
+
+  #hero img{
+      height: 300px;
+  }
+
+  .titulo{
+      height: 300px;
+  }
+
+  
+}
